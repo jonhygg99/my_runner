@@ -5,7 +5,7 @@
 ** background  moves
 */
 
-#include "csfml.h"
+#include "../csfml.h"
 
 void move_back(sfRenderWindow *window, ts_t back[6])
 {

@@ -5,7 +5,7 @@
 ** information
 */
 
-#include "csfml.h"
+#include "../csfml.h"
 
 void info(char *exe)
 {

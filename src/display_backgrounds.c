@@ -2,19 +2,19 @@
 ** EPITECH PROJECT, 2019
 ** background_set
 ** File description:
-** 
+** display_background
 */
 
-#include "csfml.h"
+#include "../csfml.h"
 
 void background_texture_sprite(ts_t back[6])
 {
-    back[0].texture = sfTexture_createFromFile("geometry.png", NULL);
-    back[1].texture = sfTexture_createFromFile("geometry.png", NULL);
-    back[2].texture = sfTexture_createFromFile("castle.jpg", NULL);
-    back[3].texture = sfTexture_createFromFile("castle.jpg", NULL);
-    back[4].texture = sfTexture_createFromFile("ground(1).jpg", NULL);
-    back[5].texture = sfTexture_createFromFile("ground(1).jpg", NULL);
+    back[0].texture = sfTexture_createFromFile(BACK, NULL);
+    back[1].texture = sfTexture_createFromFile(BACK, NULL);
+    back[2].texture = sfTexture_createFromFile(MID_BACKGROUND, NULL);
+    back[3].texture = sfTexture_createFromFile(MID_BACKGROUND, NULL);
+    back[4].texture = sfTexture_createFromFile(GROUND, NULL);
+    back[5].texture = sfTexture_createFromFile(GROUND, NULL);
     back[0].sprite = sfSprite_create();
     back[1].sprite = sfSprite_create();
     back[2].sprite = sfSprite_create();

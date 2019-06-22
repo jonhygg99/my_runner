@@ -5,14 +5,16 @@
 ** display all
 */
 
-#include "csfml.h"
+#include "../csfml.h"
 
-void runner_options(char *str)
+int runner_options(char *str)
 {
+    char *map = NULL;
+    int check;
+    int fd;
+
     if (str[0] == '-' && str[1] == 'i')
-        runner();
-    else
-        runner();
+        runner(map, 0);
 }
 
 int main(int ac, char **ag)

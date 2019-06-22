@@ -5,17 +5,17 @@
 ** score
 */
 
-#include "csfml.h"
+#include "../csfml.h"
 
 int score_win(sfRenderWindow *window)
 {
     sfVector2f pos = {900, 50};
-    static float score = 0;
+    static int score = 0;
     char *str = my_itoa(score);
     sfText *text = sfText_create();
-    sfFont *font = sfFont_createFromFile("geometry.otf");
+    sfFont *font = sfFont_createFromFile(FONT);
     sfColor color = sfColor_fromRGB(255, 255, 255);
-    
+
     sfText_setString(text, str);
     sfText_setFont(text, font);
     sfText_setCharacterSize(text, 30);
@@ -23,4 +23,5 @@ int score_win(sfRenderWindow *window)
     sfText_setPosition(text, pos);
     score += 1;
     sfRenderWindow_drawText(window, text, NULL);
+    return (1);
 }
